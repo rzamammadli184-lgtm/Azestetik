@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AzEstetik - Prezentasiya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Luxury Aesthetic Palette */
+            --bg-color: #FAF6F0; /* Soft warm white */
+            --text-dark: #2C2A29; /* Dark brown/grey */
+            --accent-gold: #C0A062; /* Soft gold */
+            --accent-light: #E8D5C4; /* Beige */
+            --white: #FFFFFF;
+        }
+        
+        .reveal { 
+            font-family: 'Poppins', sans-serif; 
+            color: var(--text-dark); 
+            background-color: var(--bg-color); 
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 { 
+            font-family: 'Playfair Display', serif; 
+            text-transform: none; 
+            color: var(--text-dark); 
+            font-weight: 600; 
+        }
+        
+        .reveal h1 { font-size: 3.5em; line-height: 1.2; margin-bottom: 20px;}
+        .reveal h2 { font-size: 2.8em; line-height: 1.2; margin-bottom: 30px;}
+        .reveal h3 { font-size: 2em; color: var(--accent-gold); margin-bottom: 20px;}
+        
+        .reveal p { 
+            font-size: 1.1em; 
+            font-weight: 300; 
+            line-height: 1.6; 
+            color: rgba(44, 42, 41, 0.85); 
+        }
+        
+        .reveal ul { list-style: none; padding: 0; margin-left: 0; }
+        .reveal li { margin-bottom: 15px; font-weight: 300; position: relative; padding-left: 25px; font-size: 1em; }
+        .reveal li::before { 
+            content: "✦"; 
+            color: var(--accent-gold); 
+            position: absolute; 
+            left: 0; 
+            top: 2px; 
+            font-size: 0.8em;
+        }
+        
+        .flex-row { display: flex; align-items: stretch; justify-content: space-between; gap: 40px; text-align: left; height: 100%;}
+        .flex-col { flex: 1; display: flex; flex-direction: column; justify-content: center;}
+        
+        .img-col { 
+            flex: 1; 
+            background-color: var(--accent-light);
+            background-size: cover; 
+            background-position: center; 
+            border-radius: 12px 12px 12px 12px; 
+            overflow: hidden; 
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        
+        .subtitle { 
+            font-family: 'Poppins', sans-serif !important; 
+            font-size: 0.4em !important; 
+            font-weight: 500 !important; 
+            color: var(--accent-gold) !important; 
+            text-transform: uppercase !important; 
+            letter-spacing: 0.3em !important; 
+            margin-bottom: 15px !important; 
+        }
+        
+        .highlight { color: var(--accent-gold); font-style: italic;}
+        
+        .card-grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 25px; 
+            margin-top: 30px; 
+        }
+        
+        .service-card { 
+            background: var(--white); 
+            padding: 30px; 
+            border-radius: 8px; 
+            border-left: 3px solid var(--accent-gold); 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: left;
+        }
+
+        .service-card h4 { font-size: 1.3em; margin-bottom: 10px; }
+        .service-card p { font-size: 0.8em; margin: 0; }
+
+        @media print {
+            @page { size: 1920px 1080px; margin: 0; }
+            body, html { width: 100% !important; height: auto !important; overflow: visible !important; background: var(--bg-color) !important; }
+            .reveal, .reveal .slides { position: static !important; width: 100% !important; height: auto !important; transform: none !important; margin: 0 !important; padding: 0 !important; }
+            .reveal .slides section { position: relative !important; display: block !important; opacity: 1 !important; visibility: visible !important; width: 100% !important; height: 1080px !important; margin: 0 !important; page-break-after: always !important; transform: none !important; overflow: hidden !important; }
+            .reveal .controls, .reveal .progress { display: none !important; }
+            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Slide 1: Giriş -->
+            <section data-transition="fade">
+                <div class="subtitle">Premium Gözəllik və Sağlamlıq Mərkəzi</div>
+                <h1>Az<span class="highlight">Estetik</span></h1>
+                <p style="margin-top: 20px; font-size: 1.2em; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Daxili harmoniyanızı xarici gözəlliyinizlə birləşdiririk.
+                </p>
+                <div style="margin-top: 50px; font-size: 0.8em; color: var(--accent-gold); letter-spacing: 2px;">
+                    KORPORATİV PREZENTASİYA
+                </div>
+            </section>
+            
+            <!-- Slide 2: Haqqımızda -->
+            <section data-transition="slide">
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <div class="subtitle">01 / Haqqımızda</div>
+                        <h2>Biz <span class="highlight">Kimik?</span></h2>
+                        <p>AzEstetik - ən son texnologiyalar və peşəkar mütəxəssislərlə xidmət göstərən premium estetik və sağlamlıq mərkəzidir.</p>
+                        <ul style="margin-top:20px;">
+                            <li>Yüksək ixtisaslı həkim-kosmetoloqlar</li>
+                            <li>FDA təsdiqli ən son texnoloji avadanlıqlar</li>
+                            <li>Fərdi və konfidensial yanaşma</li>
+                            <li>Premium müştəri məmnuniyyəti</li>
+                        </ul>
+                    </div>
+                    <!-- Aesthetic placeholder background -->
+                    <div class="img-col" style="background: linear-gradient(rgba(192, 160, 98, 0.1), rgba(192, 160, 98, 0.2));">
+                        <div style="position: absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:var(--text-dark); opacity: 0.5; font-family: 'Playfair Display', serif;">
+                            [ŞƏKİL YERİ]
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: Xidmətlər -->
+            <section data-transition="slide">
+                <div class="subtitle">02 / Fəaliyyət Sahəmiz</div>
+                <h2>Əsas <span class="highlight">Xidmətlərimiz</span></h2>
+                
+                <div class="card-grid">
+                    <div class="service-card">
+                        <h4>Aparat Kosmetologiyası</h4>
+                        <p>Lazer epilyasiyası, SMAS lifting, dəri cavanlaşdırma və cihazlarla edilən digər estetik prosedurlar.</p>
+                    </div>
+                    <div class="service-card">
+                        <h4>İnyeksion Kosmetologiya</h4>
+                        <p>Botulotoksin, fillerlər, mezoterapiya, biorevitalizasiya və digər iynəli kosmetoloji xidmətlər.</p>
+                    </div>
+                    <div class="service-card">
+                        <h4>Estetik Dermatologiya</h4>
+                        <p>Akne müalicəsi, ləkələrin silinməsi, çapıqların müalicəsi və dərinin ümumi sağlamlığı.</p>
+                    </div>
+                    <div class="service-card">
+                        <h4>Bədən Şəkilləndirmə</h4>
+                        <p>Arıqlama aparatları, selülit əleyhinə prosedurlar və bədən konturlarının bərpası.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 4: Niyə Biz? -->
+            <section data-transition="slide">
+                <div class="flex-row">
+                    <div class="img-col" style="background: linear-gradient(rgba(232, 213, 196, 0.5), rgba(232, 213, 196, 0.8));">
+                        <div style="position: absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:var(--text-dark); opacity: 0.5; font-family: 'Playfair Display', serif;">
+                            [İNTERYER və ya APARAT ŞƏKLİ]
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="subtitle">03 / Üstünlüklərimiz</div>
+                        <h2>Niyə Məhz <br><span class="highlight">AzEstetik?</span></h2>
+                        <div style="background: var(--white); padding: 25px; border-radius: 8px; margin-top: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                            <p style="margin: 0; font-weight: 500;">Təmiz, Güvənli, Keyfiyyətli</p>
+                            <p style="font-size: 0.85em; margin-top: 10px;">Bizim üçün hər bir pasiyent unikaldır. Prosedurları standart deyil, baxış və müayinədən sonra sırf pasiyentin ehtiyaclarına uyğun tətbiq edirik. İstifadə etdiyimiz bütün məhsullar orijinal və sertifikatlıdır.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Slide 5: Son/Əlaqə -->
+            <section data-transition="fade">
+                <h1 style="color: var(--accent-gold); font-size: 3em;">Gözəlliyinizi Bizə Etibar Edin</h1>
+                <p style="font-size: 1.2em; margin-top: 30px; font-family: 'Poppins', sans-serif; font-weight: 300;">
+                    www.azestetik.az<br>
+                    <span style="font-size: 0.7em; color: rgba(44, 42, 41, 0.6);">Bakı ş., [Ünvan yeri]</span>
+                </p>
+            </section>
+            
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true, 
+            center: true, 
+            transition: 'fade', 
+            disableLayout: false,
+            // Premium background transition
+            backgroundTransition: 'fade'
+        });
+    </script>
+</body>
+</html>
